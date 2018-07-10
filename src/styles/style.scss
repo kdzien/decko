@@ -5,18 +5,88 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
+footer{
+    .container{
+        display:flex;
+    }
+    color:$white-color;
+    background-color:$head-color;
+    #copyright{
+        margin-left:auto;
+        padding:10px 15px;
+        p{
+            margin:0;
+            @include custom-font(13px,400);
+        }
+    }
+}
+#content-offer{
+    background-color:#553318;
+    .content{
+        .content-header{
+            color:$white-color;
+            &:after,&:before{
+                background-color:$white-color;
+            }
+        }
+    }
+    article{
+        h1{
+            text-align:center;
+        }
+        text-align:left;
+        color:$white-color;
+    }
+}
+#content-contact,#content-services{
+    background-color:white;
+    .content{
+        .content-header{
+            color:$head-color;
+            &:after,&:before{
+                background-color:$head-color;
+            }
+        }
+    }
+}
+#content-contact{
+    .contact,form{
+        h1{
+            @include custom-font(30px,300);
+        }
+    }
+    .contact{
+        .contact-data{
+            p{
+                margin:0;
+            }
+        }
+    }
+    form{
+        h1{
+            margin-bottom: 50px;
+        }
+        input,textarea{
+            border-radius:0;
+            &:focus{
+                border-color: $head-color;
+                box-shadow: 0 0 0 0.2rem #ffb4003d;
+            }
+        }
+    }
+}
 .content{
     text-align:center;
+    padding-bottom:30px;
     .content-header{
-        @include custom-font(40px,500);
-        color:$head-color;
+        @include custom-font(40px,400);
+        letter-spacing:1px;
         position:relative;
         padding:30px;
         margin-bottom:30px;
         &:after,&:before{
             content:"";
             position:absolute;
-            background-color:darken($color: ($head-color), $amount: 5%);
             bottom:0;
             left:50%;
             transform:translateX(-50%);
@@ -36,7 +106,7 @@ body{
         margin-top:30px;
         .service{
             img{
-                width:50%;
+                width:40%;
                 border-radius:50%;
                 margin-bottom:10px;
             }
