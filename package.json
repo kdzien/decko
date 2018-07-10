@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development",
-    "prod": "webpack --mode production"
+    "start": "webpack --config webpack.config.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,12 +15,16 @@
     "browser-sync": "^2.24.5",
     "browser-sync-webpack-plugin": "^2.2.2",
     "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
     "sass-loader": "^7.0.3",
     "style-loader": "^0.21.0",
+    "url-loader": "^1.0.1",
     "webpack": "^4.15.1",
-    "webpack-cli": "^3.0.8"
+    "webpack-cli": "^3.0.8",
+    "bootstrap": "^4.1.1",
+    "node-sass": "^4.9.2"
   },
   "dependencies": {
-    "bootstrap": "^4.1.1"
+
   }
 }

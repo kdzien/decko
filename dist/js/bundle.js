@@ -135,6 +135,63 @@ exports.push([module.i, "/*!\n * Bootstrap v4.1.1 (https://getbootstrap.com/)\n 
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/mixins.scss":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/styles/mixins.scss ***!
+  \***************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/style.scss":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/styles/style.scss ***!
+  \**************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500);", ""]);
+
+// module
+exports.push([module.i, "body {\n  font-family: 'Poppins', sans-serif; }\n\n.content {\n  text-align: center; }\n  .content .content-header {\n    font-size: 40px;\n    font-weight: 500;\n    color: #ffb400;\n    position: relative;\n    padding: 30px;\n    margin-bottom: 30px; }\n    .content .content-header:after, .content .content-header:before {\n      content: \"\";\n      position: absolute;\n      background-color: #e6a200;\n      bottom: 0;\n      left: 50%;\n      transform: translateX(-50%); }\n    .content .content-header:after {\n      height: 1px;\n      width: 200px; }\n    .content .content-header:before {\n      height: 7px;\n      width: 7px;\n      bottom: -3px;\n      transform: translateX(-50%) rotate(45deg); }\n  .content .row {\n    margin-top: 30px; }\n    .content .row .service img {\n      width: 50%;\n      border-radius: 50%;\n      margin-bottom: 10px; }\n    .content .row .service h1 {\n      color: #ffb400;\n      margin: 20px 0px;\n      font-size: 24px;\n      font-weight: 500; }\n    .content .row .service p {\n      font-size: 15px;\n      font-weight: 300; }\n  .content p {\n    font-size: 17px;\n    font-weight: 300; }\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/variables.scss":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/styles/variables.scss ***!
+  \******************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/lib/css-base.js":
 /*!*************************************************!*\
   !*** ./node_modules/css-loader/lib/css-base.js ***!
@@ -724,6 +781,102 @@ module.exports = function (css) {
 
 
 __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
+
+__webpack_require__(/*! ../styles/variables.scss */ "./src/styles/variables.scss");
+
+__webpack_require__(/*! ../styles/mixins.scss */ "./src/styles/mixins.scss");
+
+__webpack_require__(/*! ../styles/style.scss */ "./src/styles/style.scss");
+
+/***/ }),
+
+/***/ "./src/styles/mixins.scss":
+/*!********************************!*\
+  !*** ./src/styles/mixins.scss ***!
+  \********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/sass-loader/lib/loader.js!./mixins.scss */ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/mixins.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/styles/style.scss":
+/*!*******************************!*\
+  !*** ./src/styles/style.scss ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/sass-loader/lib/loader.js!./style.scss */ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/style.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/styles/variables.scss":
+/*!***********************************!*\
+  !*** ./src/styles/variables.scss ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/sass-loader/lib/loader.js!./variables.scss */ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/variables.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
 
 /***/ })
 
