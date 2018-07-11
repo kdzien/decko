@@ -178,13 +178,12 @@ exports.push([module.i, "", ""]);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var escape = __webpack_require__(/*! ../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
 // imports
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500);", ""]);
 
 // module
-exports.push([module.i, "body {\n  font-family: 'Poppins', sans-serif; }\n\nfooter {\n  color: white;\n  background-color: #f7931d; }\n  footer .container {\n    display: flex; }\n  footer #copyright {\n    margin-left: auto;\n    padding: 10px 15px; }\n    footer #copyright p {\n      margin: 0;\n      font-size: 13px;\n      font-weight: 400; }\n\n#content-offer {\n  background: linear-gradient(rgba(85, 51, 24, 0.6), rgba(85, 51, 24, 0.6)), url(" + escape(__webpack_require__(/*! ../images/cleaning.jpg */ "./src/images/cleaning.jpg")) + ") no-repeat;\n  background-size: cover;\n  background-color: #553318; }\n  #content-offer .nav-tabs {\n    border-bottom: solid 1px rgba(0, 0, 0, 0.3); }\n    #content-offer .nav-tabs .nav-item .nav-link {\n      border-radius: 0;\n      color: white;\n      font-size: 26px;\n      font-weight: 500; }\n      #content-offer .nav-tabs .nav-item .nav-link.active {\n        background-color: rgba(0, 0, 0, 0.3);\n        border: none; }\n  #content-offer .offer-wrapper {\n    background-color: rgba(0, 0, 0, 0.3);\n    padding: 20px 40px; }\n    #content-offer .offer-wrapper h1 {\n      color: white;\n      font-size: 35px;\n      font-weight: 500; }\n    #content-offer .offer-wrapper p {\n      color: #e0e0e0; }\n  #content-offer .content .content-header {\n    color: white; }\n    #content-offer .content .content-header:after, #content-offer .content .content-header:before {\n      background-color: white; }\n  #content-offer table {\n    background-color: whitesmoke;\n    color: gray; }\n    #content-offer table tbody tr th, #content-offer table tbody tr td {\n      font-size: 15px;\n      font-weight: 500;\n      padding: 25px;\n      border: none; }\n    #content-offer table tbody tr:first-child {\n      background-color: #56be8e;\n      color: white; }\n    #content-offer table tbody tr:not(:first-child) th {\n      border-right: 1px solid gray; }\n  #content-offer .pack .pack-wrapper {\n    display: block;\n    height: 100%;\n    background-color: whitesmoke; }\n  #content-offer .pack .pack-h {\n    width: 100%;\n    height: 100px;\n    color: white;\n    font-size: 20px;\n    font-weight: 400;\n    display: flex;\n    flex-direction: column;\n    justify-content: center; }\n  #content-offer .pack .pack-c ul {\n    list-style-type: none;\n    font-size: 15px;\n    font-weight: 500;\n    color: gray;\n    background-color: #e0e0e0;\n    padding: 0; }\n    #content-offer .pack .pack-c ul li {\n      background-color: whitesmoke;\n      padding: 15px;\n      margin-bottom: 2px; }\n  #content-offer .pack .pack-c .extra {\n    color: #2bc41d; }\n  #content-offer .pack:nth-child(1) .pack-h {\n    background-color: #56be8e; }\n  #content-offer .pack:nth-child(2) .pack-h {\n    background-color: #3ea9f5; }\n  #content-offer .pack:nth-child(3) .pack-h {\n    background-color: #3769cc; }\n\n#content-contact, #content-services {\n  background-color: white; }\n  #content-contact .content .content-header, #content-services .content .content-header {\n    color: #f7931d; }\n    #content-contact .content .content-header:after, #content-contact .content .content-header:before, #content-services .content .content-header:after, #content-services .content .content-header:before {\n      background-color: #f7931d; }\n\n#content-contact .contact h1, #content-contact form h1 {\n  font-size: 30px;\n  font-weight: 300; }\n\n#content-contact .contact .contact-data p {\n  margin: 0; }\n\n#content-contact form h1 {\n  margin-bottom: 50px; }\n\n#content-contact form input, #content-contact form textarea {\n  border-radius: 0; }\n  #content-contact form input:focus, #content-contact form textarea:focus {\n    border-color: #f7931d;\n    box-shadow: 0 0 0 0.2rem #ffb4003d; }\n\n.content {\n  text-align: center;\n  padding-bottom: 30px; }\n  .content .content-header {\n    font-size: 45px;\n    font-weight: 400;\n    letter-spacing: 1px;\n    position: relative;\n    padding: 30px;\n    margin-bottom: 30px; }\n    .content .content-header:after, .content .content-header:before {\n      content: \"\";\n      position: absolute;\n      bottom: 0;\n      left: 50%;\n      transform: translateX(-50%); }\n    .content .content-header:after {\n      height: 1px;\n      width: 200px; }\n    .content .content-header:before {\n      height: 7px;\n      width: 7px;\n      bottom: -3px;\n      transform: translateX(-50%) rotate(45deg); }\n  .content .row {\n    margin-top: 30px; }\n    .content .row .service img {\n      width: 40%;\n      border-radius: 50%;\n      margin-bottom: 10px; }\n    .content .row .service h1 {\n      color: #f7931d;\n      margin: 20px 0px;\n      font-size: 24px;\n      font-weight: 500; }\n    .content .row .service p {\n      font-size: 15px;\n      font-weight: 300; }\n  .content p {\n    font-size: 17px;\n    font-weight: 300; }\n", ""]);
+exports.push([module.i, "body {\n  font-family: 'Poppins', sans-serif; }\n\nfooter {\n  color: white;\n  background-color: #352b44; }\n  footer .container {\n    display: flex; }\n  footer #copyright {\n    margin-left: auto;\n    padding: 10px 15px; }\n    footer #copyright p {\n      margin: 0;\n      font-size: 13px;\n      font-weight: 400; }\n\n#content-offer {\n  background-color: #352b44; }\n  #content-offer .nav-tabs {\n    border-bottom: solid 1px rgba(0, 0, 0, 0.3); }\n    #content-offer .nav-tabs .nav-item .nav-link {\n      border-radius: 0;\n      color: white;\n      font-size: 26px;\n      font-weight: 500; }\n      #content-offer .nav-tabs .nav-item .nav-link.active {\n        background-color: rgba(0, 0, 0, 0.3);\n        border: none; }\n  #content-offer .offer-wrapper {\n    background-color: rgba(0, 0, 0, 0.3);\n    padding: 20px 40px; }\n    #content-offer .offer-wrapper h1 {\n      color: white;\n      font-size: 35px;\n      font-weight: 500; }\n    #content-offer .offer-wrapper p {\n      color: #e0e0e0; }\n  #content-offer .content .content-header {\n    color: white; }\n    #content-offer .content .content-header:after, #content-offer .content .content-header:before {\n      background-color: white; }\n  #content-offer table {\n    background-color: whitesmoke;\n    color: gray; }\n    #content-offer table tbody tr th, #content-offer table tbody tr td {\n      font-size: 15px;\n      font-weight: 500;\n      padding: 25px;\n      border: none; }\n    #content-offer table tbody tr:first-child {\n      background-color: #56be8e;\n      color: white; }\n    #content-offer table tbody tr:not(:first-child) th {\n      border-right: 1px solid gray; }\n  #content-offer .pack .pack-wrapper {\n    display: block;\n    height: 100%;\n    background-color: whitesmoke; }\n  #content-offer .pack .pack-h {\n    width: 100%;\n    height: 100px;\n    color: white;\n    font-size: 20px;\n    font-weight: 400;\n    display: flex;\n    flex-direction: column;\n    justify-content: center; }\n  #content-offer .pack .pack-c ul {\n    list-style-type: none;\n    font-size: 15px;\n    font-weight: 500;\n    color: gray;\n    background-color: #e0e0e0;\n    padding: 0; }\n    #content-offer .pack .pack-c ul li {\n      background-color: whitesmoke;\n      padding: 15px;\n      margin-bottom: 2px; }\n  #content-offer .pack .pack-c .extra {\n    color: #2bc41d; }\n  #content-offer .pack:nth-child(1) .pack-h {\n    background-color: #56be8e; }\n  #content-offer .pack:nth-child(2) .pack-h {\n    background-color: #3ea9f5; }\n  #content-offer .pack:nth-child(3) .pack-h {\n    background-color: #3769cc; }\n\n#content-contact, #content-services {\n  background-color: white; }\n  #content-contact .content .content-header, #content-services .content .content-header {\n    color: #352b44; }\n    #content-contact .content .content-header:after, #content-contact .content .content-header:before, #content-services .content .content-header:after, #content-services .content .content-header:before {\n      background-color: #352b44; }\n\n#content-contact .contact h1, #content-contact form h1 {\n  font-size: 30px;\n  font-weight: 300; }\n\n#content-contact .contact .contact-data p {\n  margin: 0; }\n\n#content-contact form h1 {\n  margin-bottom: 50px; }\n\n#content-contact form input, #content-contact form textarea {\n  border-radius: 0; }\n  #content-contact form input:focus, #content-contact form textarea:focus {\n    border-color: #352b44;\n    box-shadow: 0 0 0 0.2rem #ffb4003d; }\n\n.content {\n  text-align: center;\n  padding-bottom: 30px; }\n  .content .content-header {\n    font-size: 45px;\n    font-weight: 400;\n    letter-spacing: 1px;\n    position: relative;\n    padding: 30px;\n    margin-bottom: 30px; }\n    .content .content-header:after, .content .content-header:before {\n      content: \"\";\n      position: absolute;\n      bottom: 0;\n      left: 50%;\n      transform: translateX(-50%); }\n    .content .content-header:after {\n      height: 1px;\n      width: 200px; }\n    .content .content-header:before {\n      height: 7px;\n      width: 7px;\n      bottom: -3px;\n      transform: translateX(-50%) rotate(45deg); }\n  .content .row {\n    margin-top: 30px; }\n    .content .row .service img {\n      width: 40%;\n      border-radius: 50%;\n      margin-bottom: 10px; }\n    .content .row .service h1 {\n      color: #352b44;\n      margin: 20px 0px;\n      font-size: 24px;\n      font-weight: 500; }\n    .content .row .service p {\n      font-size: 15px;\n      font-weight: 300; }\n  .content p {\n    font-size: 17px;\n    font-weight: 300; }\n", ""]);
 
 // exports
 
@@ -204,6 +203,26 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 
 // module
 exports.push([module.i, "", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/welcome.scss":
+/*!****************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/sass-loader/lib/loader.js!./src/styles/welcome.scss ***!
+  \****************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var escape = __webpack_require__(/*! ../../node_modules/css-loader/lib/url/escape.js */ "./node_modules/css-loader/lib/url/escape.js");
+exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500);", ""]);
+
+// module
+exports.push([module.i, "header {\n  background: linear-gradient(#352b44cc, #352b44cc), url(" + escape(__webpack_require__(/*! ../images/cleaning.jpg */ "./src/images/cleaning.jpg")) + ") no-repeat;\n  background-size: cover;\n  height: 100vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n  header nav {\n    padding: 30px 50px;\n    width: 100%;\n    display: flex;\n    color: whitesmoke;\n    position: absolute;\n    top: 0; }\n    header nav .logo {\n      padding: 15px 30px; }\n    header nav ul {\n      margin-left: auto !important;\n      padding: 0;\n      margin: 0;\n      display: flex;\n      list-style-type: none; }\n      header nav ul li {\n        padding: 15px 30px; }\n  header .h-content {\n    color: whitesmoke;\n    text-align: center; }\n    header .h-content h1 {\n      text-align: center;\n      font-size: 120px;\n      font-weight: 100; }\n    header .h-content p {\n      font-size: 19px;\n      font-weight: 300; }\n    header .h-content button {\n      padding: 15px 40px;\n      background-color: #f87793;\n      border: none;\n      font-weight: 500;\n      color: whitesmoke; }\n", ""]);
 
 // exports
 
@@ -13787,6 +13806,8 @@ __webpack_require__(/*! ../styles/mixins.scss */ "./src/styles/mixins.scss");
 
 __webpack_require__(/*! ../styles/style.scss */ "./src/styles/style.scss");
 
+__webpack_require__(/*! ../styles/welcome.scss */ "./src/styles/welcome.scss");
+
 __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 /***/ }),
@@ -13860,6 +13881,36 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/sass-loader/lib/loader.js!./variables.scss */ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/variables.scss");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./src/styles/welcome.scss":
+/*!*********************************!*\
+  !*** ./src/styles/welcome.scss ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../node_modules/css-loader!../../node_modules/sass-loader/lib/loader.js!./welcome.scss */ "./node_modules/css-loader/index.js!./node_modules/sass-loader/lib/loader.js!./src/styles/welcome.scss");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 

@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500');
+@import 'mixins';
+@import 'variables';
+
+header{
+    nav{
+        padding:30px 50px;
+        width:100%;
+        display:flex;
+        color:whitesmoke;
+        position:absolute;
+        top:0;
+        .logo{
+            padding:15px 30px;
+        }
+        ul{
+            margin-left:auto !important;
+            padding:0; margin:0;
+            display:flex;
+            list-style-type: none;
+            li{
+                padding:15px 30px;
+            }
+        }
+    }
+    background: linear-gradient(#352b44cc, #352b44cc), url("../images/cleaning.jpg") no-repeat;
+    background-size:cover;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    .h-content{
+        color:whitesmoke;
+        text-align:center;
+        h1{
+            text-align:center;
+            @include custom-font(120px,100);
+        }
+        p{
+            @include custom-font(19px,300);
+        }
+        button{
+            padding:15px 40px;
+            background-color:#f87793;
+            border:none;
+            font-weight:500;
+            color:whitesmoke;
+        }
+    }
+}
