@@ -3,7 +3,7 @@
     font-weight:$font-weight;
 }
 @mixin box_shadow($size){
-    -webkit-box-shadow: $size $size 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: $size $size 5px 0px rgba(0,0,0,0.75);
-    box-shadow: $size $size 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: $size $size 5px 0px rgba(109, 109, 109, 0.75);
+    -moz-box-shadow: $size $size 5px 0px rgba(109, 109, 109, 0.75);
+    box-shadow: $size $size 5px 0px rgba(109, 109, 109, 0.75);
 }

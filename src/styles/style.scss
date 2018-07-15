@@ -103,14 +103,19 @@ footer{
             justify-content: center;
         }
         .pack-c{
+            background-color: #e4e4e4;
             ul{
                 list-style-type: none;
-                @include custom-font(15px,500);
+                @include custom-font(14px,300);
                 padding:0;margin:0;
                 li{
                     background-color:white;
                     padding:15px;
                     margin-bottom:2px;
+                    &:last-child{
+                        margin:0;
+                        border-bottom:2px solid #e4e4e4;
+                    }
                 }
             }
             .extra{

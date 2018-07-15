@@ -183,7 +183,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500);", ""]);
 
 // module
-exports.push([module.i, "body {\n  font-family: 'Poppins', sans-serif; }\n\nfooter {\n  color: white;\n  background-color: #352b44; }\n  footer .container {\n    display: flex; }\n  footer #copyright {\n    margin-left: auto;\n    padding: 10px 15px; }\n    footer #copyright p {\n      margin: 0;\n      font-size: 13px;\n      font-weight: 400; }\n\n#content-offer {\n  background-color: whitesmoke; }\n  #content-offer .nav-tabs {\n    justify-content: space-between;\n    border-bottom: none; }\n    #content-offer .nav-tabs .nav-item .nav-link {\n      border-radius: 0;\n      color: #352b44;\n      font-size: 26px;\n      font-weight: 400; }\n      #content-offer .nav-tabs .nav-item .nav-link.active {\n        color: #f13961;\n        background-color: transparent;\n        border: none; }\n  #content-offer .offer-wrapper {\n    padding: 20px 40px; }\n    #content-offer .offer-wrapper h1 {\n      color: white;\n      font-size: 35px;\n      font-weight: 500; }\n    #content-offer .offer-wrapper p {\n      color: black; }\n  #content-offer .content .content-header {\n    color: white; }\n    #content-offer .content .content-header:after, #content-offer .content .content-header:before {\n      background-color: white; }\n  #content-offer table {\n    color: gray; }\n    #content-offer table tbody tr th, #content-offer table tbody tr td {\n      font-size: 15px;\n      font-weight: 500;\n      padding: 25px;\n      border: none; }\n    #content-offer table tbody tr:first-child th, #content-offer table tbody tr:first-child td {\n      background-color: #62ea66;\n      color: white; }\n    #content-offer table tbody tr:first-child th {\n      background-color: transparent !important; }\n    #content-offer table tbody tr:not(:first-child) th, #content-offer table tbody tr:not(:first-child) td {\n      background-color: white; }\n    #content-offer table tbody tr:not(:first-child) th {\n      border-right: 1px solid gray; }\n  #content-offer .pack .pack-wrapper {\n    display: block;\n    height: 100%;\n    background-color: white;\n    -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);\n    -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);\n    box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75); }\n  #content-offer .pack .pack-h {\n    width: 100%;\n    height: 100px;\n    color: white;\n    font-size: 20px;\n    font-weight: 400;\n    display: flex;\n    flex-direction: column;\n    justify-content: center; }\n  #content-offer .pack .pack-c ul {\n    list-style-type: none;\n    font-size: 15px;\n    font-weight: 500;\n    padding: 0;\n    margin: 0; }\n    #content-offer .pack .pack-c ul li {\n      background-color: white;\n      padding: 15px;\n      margin-bottom: 2px; }\n  #content-offer .pack .pack-c .extra {\n    color: #62ea66; }\n  #content-offer .pack:nth-child(1) .pack-h {\n    background-color: #62ea66; }\n  #content-offer .pack:nth-child(2) .pack-h {\n    background-color: #3ea9f5; }\n  #content-offer .pack:nth-child(3) .pack-h {\n    background-color: #3769cc; }\n\n#content-contact, #content-services {\n  background-color: white; }\n  #content-contact .content .content-header, #content-services .content .content-header {\n    color: #352b44; }\n    #content-contact .content .content-header:after, #content-contact .content .content-header:before, #content-services .content .content-header:after, #content-services .content .content-header:before {\n      background-color: #f13961; }\n\n#content-offer .content .content-header {\n  color: #f13961; }\n  #content-offer .content .content-header:after, #content-offer .content .content-header:before {\n    background-color: #352b44; }\n\n#content-contact .contact h1, #content-contact form h1 {\n  font-size: 30px;\n  font-weight: 300; }\n\n#content-contact .contact .contact-data p {\n  margin: 0; }\n\n#content-contact form h1 {\n  margin-bottom: 50px; }\n\n#content-contact form input, #content-contact form textarea {\n  border-radius: 0; }\n  #content-contact form input:focus, #content-contact form textarea:focus {\n    border-color: #352b44;\n    box-shadow: 0 0 0 0.2rem #ffb4003d; }\n\n#content-contact form button {\n  width: 100%;\n  padding: 15px 40px;\n  background-color: #f13961;\n  border: none;\n  font-weight: 500;\n  color: whitesmoke; }\n\n.content {\n  text-align: center;\n  padding: 40px 0px 90px 0px; }\n  .content .content-header {\n    font-size: 45px;\n    font-weight: 400;\n    letter-spacing: 1px;\n    position: relative;\n    padding: 30px;\n    margin-bottom: 30px; }\n    .content .content-header:after, .content .content-header:before {\n      content: \"\";\n      position: absolute;\n      bottom: 0;\n      left: 50%;\n      transform: translateX(-50%); }\n    .content .content-header:after {\n      height: 1px;\n      width: 200px; }\n    .content .content-header:before {\n      height: 7px;\n      width: 7px;\n      bottom: -3px;\n      transform: translateX(-50%) rotate(45deg); }\n  .content .row {\n    margin-top: 30px; }\n    .content .row .service img {\n      width: 55%;\n      border-radius: 50%;\n      margin-bottom: 10px; }\n    .content .row .service h1 {\n      color: #352b44;\n      margin: 20px 0px;\n      font-size: 24px;\n      font-weight: 500; }\n    .content .row .service p {\n      font-size: 15px;\n      font-weight: 300; }\n  .content p {\n    font-size: 17px;\n    font-weight: 300; }\n", ""]);
+exports.push([module.i, "body {\n  font-family: 'Poppins', sans-serif; }\n\nfooter {\n  color: white;\n  background-color: #352b44; }\n  footer .container {\n    display: flex; }\n  footer #copyright {\n    margin-left: auto;\n    padding: 10px 15px; }\n    footer #copyright p {\n      margin: 0;\n      font-size: 13px;\n      font-weight: 400; }\n\n#content-offer {\n  background-color: whitesmoke; }\n  #content-offer .nav-tabs {\n    justify-content: space-between;\n    border-bottom: none; }\n    #content-offer .nav-tabs .nav-item .nav-link {\n      border-radius: 0;\n      color: #352b44;\n      font-size: 26px;\n      font-weight: 400; }\n      #content-offer .nav-tabs .nav-item .nav-link.active {\n        color: #f13961;\n        background-color: transparent;\n        border: none; }\n  #content-offer .offer-wrapper {\n    padding: 20px 40px; }\n    #content-offer .offer-wrapper h1 {\n      color: white;\n      font-size: 35px;\n      font-weight: 500; }\n    #content-offer .offer-wrapper p {\n      color: black; }\n  #content-offer .content .content-header {\n    color: white; }\n    #content-offer .content .content-header:after, #content-offer .content .content-header:before {\n      background-color: white; }\n  #content-offer table {\n    color: gray; }\n    #content-offer table tbody tr th, #content-offer table tbody tr td {\n      font-size: 15px;\n      font-weight: 500;\n      padding: 25px;\n      border: none; }\n    #content-offer table tbody tr:first-child th, #content-offer table tbody tr:first-child td {\n      background-color: #3ea9f5;\n      color: white; }\n    #content-offer table tbody tr:first-child th {\n      background-color: transparent !important; }\n    #content-offer table tbody tr:not(:first-child) th, #content-offer table tbody tr:not(:first-child) td {\n      background-color: white; }\n    #content-offer table tbody tr:not(:first-child) th {\n      border-right: 1px solid gray; }\n  #content-offer .pack .pack-wrapper {\n    display: block;\n    height: 100%;\n    background-color: white;\n    -webkit-box-shadow: 4px 4px 5px 0px rgba(109, 109, 109, 0.75);\n    -moz-box-shadow: 4px 4px 5px 0px rgba(109, 109, 109, 0.75);\n    box-shadow: 4px 4px 5px 0px rgba(109, 109, 109, 0.75); }\n  #content-offer .pack .pack-h {\n    width: 100%;\n    height: 100px;\n    color: white;\n    font-size: 20px;\n    font-weight: 400;\n    display: flex;\n    flex-direction: column;\n    justify-content: center; }\n  #content-offer .pack .pack-c {\n    background-color: #e4e4e4; }\n    #content-offer .pack .pack-c ul {\n      list-style-type: none;\n      font-size: 14px;\n      font-weight: 300;\n      padding: 0;\n      margin: 0; }\n      #content-offer .pack .pack-c ul li {\n        background-color: white;\n        padding: 15px;\n        margin-bottom: 2px; }\n        #content-offer .pack .pack-c ul li:last-child {\n          margin: 0;\n          border-bottom: 2px solid #e4e4e4; }\n    #content-offer .pack .pack-c .extra {\n      color: #3ea9f5; }\n  #content-offer .pack:nth-child(1) .pack-h {\n    background-color: #3ea9f5; }\n  #content-offer .pack:nth-child(2) .pack-h {\n    background-color: #5e8dea; }\n  #content-offer .pack:nth-child(3) .pack-h {\n    background-color: #3769cc; }\n\n#content-contact, #content-services {\n  background-color: white; }\n  #content-contact .content .content-header, #content-services .content .content-header {\n    color: #352b44; }\n    #content-contact .content .content-header:after, #content-contact .content .content-header:before, #content-services .content .content-header:after, #content-services .content .content-header:before {\n      background-color: #f13961; }\n\n#content-offer .content .content-header {\n  color: #f13961; }\n  #content-offer .content .content-header:after, #content-offer .content .content-header:before {\n    background-color: #352b44; }\n\n#content-contact .contact h1, #content-contact form h1 {\n  font-size: 30px;\n  font-weight: 300; }\n\n#content-contact .contact .contact-data p {\n  margin: 0; }\n\n#content-contact form h1 {\n  margin-bottom: 50px; }\n\n#content-contact form input, #content-contact form textarea {\n  border-radius: 0; }\n  #content-contact form input:focus, #content-contact form textarea:focus {\n    border-color: #352b44;\n    box-shadow: 0 0 0 0.2rem #ffb4003d; }\n\n#content-contact form button {\n  width: 100%;\n  padding: 15px 40px;\n  background-color: #f13961;\n  border: none;\n  font-weight: 500;\n  color: whitesmoke; }\n\n.content {\n  text-align: center;\n  padding: 40px 0px 90px 0px; }\n  .content .content-header {\n    font-size: 45px;\n    font-weight: 400;\n    letter-spacing: 1px;\n    position: relative;\n    padding: 30px;\n    margin-bottom: 30px; }\n    .content .content-header:after, .content .content-header:before {\n      content: \"\";\n      position: absolute;\n      bottom: 0;\n      left: 50%;\n      transform: translateX(-50%); }\n    .content .content-header:after {\n      height: 1px;\n      width: 200px; }\n    .content .content-header:before {\n      height: 7px;\n      width: 7px;\n      bottom: -3px;\n      transform: translateX(-50%) rotate(45deg); }\n  .content .row {\n    margin-top: 30px; }\n    .content .row .service img {\n      width: 55%;\n      border-radius: 50%;\n      margin-bottom: 10px; }\n    .content .row .service h1 {\n      color: #352b44;\n      margin: 20px 0px;\n      font-size: 24px;\n      font-weight: 500; }\n    .content .row .service p {\n      font-size: 15px;\n      font-weight: 300; }\n  .content p {\n    font-size: 17px;\n    font-weight: 300; }\n", ""]);
 
 // exports
 
@@ -339,6 +339,224 @@ module.exports = function escape(url) {
 
     return url
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/jquery.scrollto/jquery.scrollTo.js":
+/*!*********************************************************!*\
+  !*** ./node_modules/jquery.scrollto/jquery.scrollTo.js ***!
+  \*********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
+ * jQuery.scrollTo
+ * Copyright (c) 2007-2015 Ariel Flesler - aflesler<a>gmail<d>com | http://flesler.blogspot.com
+ * Licensed under MIT
+ * http://flesler.blogspot.com/2007/10/jqueryscrollto.html
+ * @projectDescription Lightweight, cross-browser and highly customizable animated scrolling with jQuery
+ * @author Ariel Flesler
+ * @version 2.1.2
+ */
+;(function(factory) {
+	'use strict';
+	if (true) {
+		// AMD
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")], __WEBPACK_AMD_DEFINE_FACTORY__ = (factory),
+				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
+				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+	} else {}
+})(function($) {
+	'use strict';
+
+	var $scrollTo = $.scrollTo = function(target, duration, settings) {
+		return $(window).scrollTo(target, duration, settings);
+	};
+
+	$scrollTo.defaults = {
+		axis:'xy',
+		duration: 0,
+		limit:true
+	};
+
+	function isWin(elem) {
+		return !elem.nodeName ||
+			$.inArray(elem.nodeName.toLowerCase(), ['iframe','#document','html','body']) !== -1;
+	}		
+
+	$.fn.scrollTo = function(target, duration, settings) {
+		if (typeof duration === 'object') {
+			settings = duration;
+			duration = 0;
+		}
+		if (typeof settings === 'function') {
+			settings = { onAfter:settings };
+		}
+		if (target === 'max') {
+			target = 9e9;
+		}
+
+		settings = $.extend({}, $scrollTo.defaults, settings);
+		// Speed is still recognized for backwards compatibility
+		duration = duration || settings.duration;
+		// Make sure the settings are given right
+		var queue = settings.queue && settings.axis.length > 1;
+		if (queue) {
+			// Let's keep the overall duration
+			duration /= 2;
+		}
+		settings.offset = both(settings.offset);
+		settings.over = both(settings.over);
+
+		return this.each(function() {
+			// Null target yields nothing, just like jQuery does
+			if (target === null) return;
+
+			var win = isWin(this),
+				elem = win ? this.contentWindow || window : this,
+				$elem = $(elem),
+				targ = target, 
+				attr = {},
+				toff;
+
+			switch (typeof targ) {
+				// A number will pass the regex
+				case 'number':
+				case 'string':
+					if (/^([+-]=?)?\d+(\.\d+)?(px|%)?$/.test(targ)) {
+						targ = both(targ);
+						// We are done
+						break;
+					}
+					// Relative/Absolute selector
+					targ = win ? $(targ) : $(targ, elem);
+					/* falls through */
+				case 'object':
+					if (targ.length === 0) return;
+					// DOMElement / jQuery
+					if (targ.is || targ.style) {
+						// Get the real position of the target
+						toff = (targ = $(targ)).offset();
+					}
+			}
+
+			var offset = $.isFunction(settings.offset) && settings.offset(elem, targ) || settings.offset;
+
+			$.each(settings.axis.split(''), function(i, axis) {
+				var Pos	= axis === 'x' ? 'Left' : 'Top',
+					pos = Pos.toLowerCase(),
+					key = 'scroll' + Pos,
+					prev = $elem[key](),
+					max = $scrollTo.max(elem, axis);
+
+				if (toff) {// jQuery / DOMElement
+					attr[key] = toff[pos] + (win ? 0 : prev - $elem.offset()[pos]);
+
+					// If it's a dom element, reduce the margin
+					if (settings.margin) {
+						attr[key] -= parseInt(targ.css('margin'+Pos), 10) || 0;
+						attr[key] -= parseInt(targ.css('border'+Pos+'Width'), 10) || 0;
+					}
+
+					attr[key] += offset[pos] || 0;
+
+					if (settings.over[pos]) {
+						// Scroll to a fraction of its width/height
+						attr[key] += targ[axis === 'x'?'width':'height']() * settings.over[pos];
+					}
+				} else {
+					var val = targ[pos];
+					// Handle percentage values
+					attr[key] = val.slice && val.slice(-1) === '%' ?
+						parseFloat(val) / 100 * max
+						: val;
+				}
+
+				// Number or 'number'
+				if (settings.limit && /^\d+$/.test(attr[key])) {
+					// Check the limits
+					attr[key] = attr[key] <= 0 ? 0 : Math.min(attr[key], max);
+				}
+
+				// Don't waste time animating, if there's no need.
+				if (!i && settings.axis.length > 1) {
+					if (prev === attr[key]) {
+						// No animation needed
+						attr = {};
+					} else if (queue) {
+						// Intermediate animation
+						animate(settings.onAfterFirst);
+						// Don't animate this axis again in the next iteration.
+						attr = {};
+					}
+				}
+			});
+
+			animate(settings.onAfter);
+
+			function animate(callback) {
+				var opts = $.extend({}, settings, {
+					// The queue setting conflicts with animate()
+					// Force it to always be true
+					queue: true,
+					duration: duration,
+					complete: callback && function() {
+						callback.call(elem, targ, settings);
+					}
+				});
+				$elem.animate(attr, opts);
+			}
+		});
+	};
+
+	// Max scrolling position, works on quirks mode
+	// It only fails (not too badly) on IE, quirks mode.
+	$scrollTo.max = function(elem, axis) {
+		var Dim = axis === 'x' ? 'Width' : 'Height',
+			scroll = 'scroll'+Dim;
+
+		if (!isWin(elem))
+			return elem[scroll] - $(elem)[Dim.toLowerCase()]();
+
+		var size = 'client' + Dim,
+			doc = elem.ownerDocument || elem.document,
+			html = doc.documentElement,
+			body = doc.body;
+
+		return Math.max(html[scroll], body[scroll]) - Math.min(html[size], body[size]);
+	};
+
+	function both(val) {
+		return $.isFunction(val) || $.isPlainObject(val) ? val : { top:val, left:val };
+	}
+
+	// Add special hooks so that window scroll properties can be animated
+	$.Tween.propHooks.scrollLeft = 
+	$.Tween.propHooks.scrollTop = {
+		get: function(t) {
+			return $(t.elem)[t.prop]();
+		},
+		set: function(t) {
+			var curr = this.get(t);
+			// If interrupt is true and user scrolled, stop animating
+			if (t.options.interrupt && t._last && t._last !== curr) {
+				return $(t.elem).stop();
+			}
+			var next = Math.round(t.now);
+			// Don't waste CPU
+			// Browsers don't render floating point scroll
+			if (curr !== next) {
+				$(t.elem)[t.prop](next);
+				t._last = this.get(t);
+			}
+		}
+	};
+
+	// AMD requirement
+	return $scrollTo;
+});
 
 
 /***/ }),
@@ -13794,7 +14012,7 @@ module.exports = "data:image/jpeg;base64,/9j/4SdsRXhpZgAASUkqAAgAAAAQAAABAwABAAA
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function($) {
 
 __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 
@@ -13809,6 +14027,16 @@ __webpack_require__(/*! ../styles/style.scss */ "./src/styles/style.scss");
 __webpack_require__(/*! ../styles/welcome.scss */ "./src/styles/welcome.scss");
 
 __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+
+__webpack_require__(/*! jquery.scrollto */ "./node_modules/jquery.scrollto/jquery.scrollTo.js");
+
+//menu scroll
+$('nav').find('li').each(function () {
+    $(this).click(function () {
+        $('body').scrollTo('#' + $(this).attr("data-scroll"), 800);
+    });
+});
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
