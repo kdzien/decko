@@ -222,7 +222,7 @@ exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader
 exports.push([module.i, "@import url(https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500);", ""]);
 
 // module
-exports.push([module.i, "header {\n  background: linear-gradient(#352b44cc, #352b44cc), url(" + escape(__webpack_require__(/*! ../images/cleaning.jpg */ "./src/images/cleaning.jpg")) + ") no-repeat;\n  background-size: cover;\n  height: 100vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n  header nav {\n    padding: 30px 50px;\n    width: 100%;\n    display: flex;\n    color: whitesmoke;\n    position: absolute;\n    top: 0; }\n    header nav .logo {\n      padding: 15px 30px; }\n    header nav ul {\n      margin-left: auto !important;\n      padding: 0;\n      margin: 0;\n      display: flex;\n      list-style-type: none; }\n      header nav ul li {\n        padding: 15px 30px; }\n  header .h-content {\n    color: whitesmoke;\n    text-align: center; }\n    header .h-content h1 {\n      text-align: center;\n      font-size: 120px;\n      font-weight: 100; }\n    header .h-content p {\n      font-size: 19px;\n      font-weight: 300; }\n    header .h-content button {\n      padding: 15px 40px;\n      background-color: #f13961;\n      border: none;\n      font-weight: 500;\n      color: whitesmoke; }\n", ""]);
+exports.push([module.i, "header {\n  background: linear-gradient(#352b44cc, #352b44cc), url(" + escape(__webpack_require__(/*! ../images/cleaning.jpg */ "./src/images/cleaning.jpg")) + ") no-repeat;\n  background-size: cover;\n  height: 100vh;\n  display: flex;\n  flex-direction: column;\n  justify-content: center; }\n  header nav {\n    padding: 30px 50px;\n    width: 100%;\n    display: flex;\n    color: whitesmoke;\n    position: fixed;\n    top: 0;\n    transition: 0.2s;\n    z-index: 99; }\n    header nav .logo {\n      padding: 15px 30px; }\n    header nav ul {\n      margin-left: auto !important;\n      padding: 0;\n      margin: 0;\n      display: flex;\n      list-style-type: none; }\n      header nav ul li {\n        cursor: pointer;\n        padding: 15px 30px; }\n        header nav ul li:hover {\n          background-color: #352b44; }\n  header .h-content {\n    color: whitesmoke;\n    text-align: center; }\n    header .h-content h1 {\n      text-align: center;\n      font-size: 120px;\n      font-weight: 100; }\n    header .h-content p {\n      font-size: 19px;\n      font-weight: 300; }\n    header .h-content button {\n      padding: 15px 40px;\n      background-color: #f13961;\n      border: none;\n      font-weight: 500;\n      color: whitesmoke; }\n", ""]);
 
 // exports
 
@@ -14012,7 +14012,7 @@ module.exports = "data:image/jpeg;base64,/9j/4SdsRXhpZgAASUkqAAgAAAAQAAABAwABAAA
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function($) {
+
 
 __webpack_require__(/*! bootstrap/dist/css/bootstrap.min.css */ "./node_modules/bootstrap/dist/css/bootstrap.min.css");
 
@@ -14030,12 +14030,55 @@ __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
 
 __webpack_require__(/*! jquery.scrollto */ "./node_modules/jquery.scrollto/jquery.scrollTo.js");
 
-//menu scroll
-$('nav').find('li').each(function () {
-    $(this).click(function () {
-        $('body').scrollTo('#' + $(this).attr("data-scroll"), 800);
-    });
+var _nav = __webpack_require__(/*! ./nav */ "./src/js/nav.js");
+
+(0, _nav.nav)();
+
+/***/ }),
+
+/***/ "./src/js/nav.js":
+/*!***********************!*\
+  !*** ./src/js/nav.js ***!
+  \***********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
 });
+exports.nav = nav;
+function nav() {
+    //smoothscrol
+    $('nav').find('li').each(function () {
+        $(this).click(function () {
+            $('body').scrollTo('#' + $(this).attr("data-scroll"), 800);
+        });
+    });
+    //stickyNavbar
+    var is_sticky = false;
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 2) {
+            if (is_sticky === false) {
+                is_sticky = true;
+                $('nav').animate({
+                    "padding": "0px 0px"
+                }, 0, function () {}).css({
+                    "background-color": "rgba(53, 43, 68, 0.7)"
+                });
+            }
+        } else {
+            is_sticky = false;
+            $('nav').animate({
+                "padding": "30px 50px"
+            }, 0, function () {}).css({
+                "background-color": "rgba(0,0,0,0)"
+            });
+        }
+    });
+}
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),

@@ -6,10 +6,6 @@ import '../styles/style.scss';
 import '../styles/welcome.scss';
 import 'jquery';
 import 'jquery.scrollto';
+import {nav} from './nav';
 
-//menu scroll
-$('nav').find('li').each(function(){
-    $(this).click(function(){
-        $('body').scrollTo(`#${$(this).attr("data-scroll")}`,800);
-    })
-})
+nav();
