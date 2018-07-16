@@ -1,4 +1,8 @@
 export function nav(){
+    //morebutton
+    $('#more').click(function(){
+        $('body').scrollTo(`#content-services`,800);
+    })
     //smoothscrol
     $('nav').find('li').each(function(){
         $(this).click(function(){

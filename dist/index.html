@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-
+        <meta name="viewport" content="width=device-width,initial-scale=1">
     </head>
     <body>
         <header>
@@ -16,7 +16,7 @@
             <div class="h-content">
                 <h1>DECKO</h1>
                 <p>Profesjonalne sprzątanie apartamentów oraz powierzchni biurowych</p>
-                <button>Dowiedz się więcej</button>
+                <button id="more">Dowiedz się więcej</button>
             </div>
         </header>
         <main>
@@ -76,6 +76,25 @@
                     <section class="tab-content offer-wrapper" id="myTabContent">
                         <article class="tab-pane  fade " id="graves" role="tabpanel" aria-labelledby="graves-tab">
                             <div class="row">
+                                <div class="col-md-12 offer-desc">
+                                    <p>Oferta Naszej Firmy w zakresie opieki nad grobami:</p>
+                                    <ul>
+                                        <li>Sprzątanie nagrobków oraz bezpośredniego otoczenia grobu</li>
+                                        <li>Czyszczenie, polerowanie i konserwacja nagrobków</li>
+                                        <li>Ustawianie i zapalanie zniczy</li>
+                                        <li>Sprzedaż i dowóz kwiatów, wieńców i wiązanek</li>
+                                        <li>Odśnieżanie grobu</li>
+                                        <li>Prace ogrodnicze- obsadzanie grobu, otoczenia roślinami, pielęgnacja kwiatów , krzewów wokół grobu</li>
+                                        <li>Zagospodarowanie bezpośredniej okolicy grobu (wysypanie grysem, żwirem, montaż ławeczki)</li>
+                                        <li>Opieka nad grobem bezpośrednio po pogrzebie
+                                                (usuwanie wypalonych zniczy, zwiędłych kwiatów ,uformowanie mogiły, montaż drewnianej ramy )</li>
+                                        <li>Wykonanie dokumentacji fotograficznej (przed i po wykonaniu zlecenia )</li>
+                                        <li>Wszelkie prace indywidalne na życzenie Klienta.</li>
+                                    </ul>    
+                                </div>
+                            </div>
+                            <div class="row">
+                                
                                 <div class="col-md-4 pack">
                                     <div class="pack-wrapper">
                                         <div class="pack-h">PODSTAWOWY BEZ MYCIA</div>
@@ -120,7 +139,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <table class=" col-md-10 offset-md-1">
+                                <table class="table-responsive col-md-10 offset-md-1">
                                     <tbody>
                                         <tr>
                                         <th></th>
@@ -155,38 +174,42 @@
                             </div>
                             <p>* Przy cyklu sprzątania 6 i 12 razy w roku odśnieżanie w w/w cenie.</p>
                         </article>
-                        <article class="tab-pane white fade" id="clean" role="tabpanel" aria-labelledby="clean-tab">
+                        <article class="tab-pane  fade" id="clean" role="tabpanel" aria-labelledby="clean-tab">
                             <div class="row">
-                                <p class="col-md-12">Bezpiecznie i skutecznie czyścimy wszystkie rodzaje mebli tapicerowanych: sofy, kanapy, narożniki, krzesła, fotele. Usuwamy uciążliwe plamy i zabrudzenia nie pozostawiając zacieków na tapicerce.</p>
-                                <p class="col-md-12">Sprzątanie obejmuje wiele elementów, w zależności od rodzaju zlecenia:</p>
-                                <ul class="col-md-12">
-                                    <li>zamiatanie</li>
-                                    <li>odkurzanie</li>
-                                    <li>mycie podłóg</li>
-                                    <li>utrzymanie w czystości mebli, urządzeń, sprzętów komputerowych, lamp, rolet</li>
-                                    <li>czyszczenie i mycie sprzętów sanitarnych, płytek, luster</li>
-                                </ul>
-                                <p class="col-md-12">Usługa obejmuje również utrzymanie w czystości obiektów lub posesji prywatnych na zewnątrz</p>
-                                <ul class="col-md-12">
-                                    <li>latem (czystość, koszenie traw)</li>
-                                    <li>jesienią (lidwidacja liści, przycinanie krzewów</li>
-                                    <li>sprzątanie po remontach</li>
-                                </ul>
+                                <div class="col-md-12 offer-desc">
+                                    <p class="col-md-12">Bezpiecznie i skutecznie czyścimy wszystkie rodzaje mebli tapicerowanych: sofy, kanapy, narożniki, krzesła, fotele. Usuwamy uciążliwe plamy i zabrudzenia nie pozostawiając zacieków na tapicerce.</p>
+                                    <p class="col-md-12">Sprzątanie obejmuje wiele elementów, w zależności od rodzaju zlecenia:</p>
+                                    <ul class="col-md-12">
+                                        <li>zamiatanie</li>
+                                        <li>odkurzanie</li>
+                                        <li>mycie podłóg</li>
+                                        <li>utrzymanie w czystości mebli, urządzeń, sprzętów komputerowych, lamp, rolet</li>
+                                        <li>czyszczenie i mycie sprzętów sanitarnych, płytek, luster</li>
+                                    </ul>
+                                    <p class="col-md-12">Usługa obejmuje również utrzymanie w czystości obiektów lub posesji prywatnych na zewnątrz</p>
+                                    <ul class="col-md-12">
+                                        <li>latem (czystość, koszenie traw)</li>
+                                        <li>jesienią (lidwidacja liści, przycinanie krzewów</li>
+                                        <li>sprzątanie po remontach</li>
+                                    </ul>
+                                </div>
                             </div>
                         </article>
-                        <article class="tab-pane white fade " id="extractc" role="tabpanel" aria-labelledby="extractc-tab">
+                        <article class="tab-pane fade " id="extractc" role="tabpanel" aria-labelledby="extractc-tab">
                             <div class="row">
-                                <p class="col-md-12">Czyszczenie ekstrakcyjne to metoda dogłębnego prania tapicerki meblowej, wykładzin, dywanów, czy tapicerki samochodowej.</p>
-                                <p class="col-md-12">Składa się z kilku kroków:</p>
-                                <ul class="col-md-12">
-                                    <li>gruntownego odkurzania</li>
-                                    <li>Odplamiania i szczotkowania materiału</li>
-                                    <li>Rozpuszczenie brudu wstępnym czyszczeniem</li>
-                                    <li>Pranie zasadnicze polegające na płukaniu materiału wodą ze specjalnym środkiem do prania za pomocą maszyny natryskowo – ssącej.</li>
-                                </ul>
-                                <p class="col-md-12">Prawidłowo wykonane pranie ekstrakcyjne skutecznie usuwa plamy i zabrudzenia , a także zapobiega powstawaniu zacieków – typowej pozostałości po samodzielnym praniu kanap, sof czy narożników.</p>
+                                <div class="col-md-12 offer-desc">
+                                    <p class="col-md-12">Czyszczenie ekstrakcyjne to metoda dogłębnego prania tapicerki meblowej, wykładzin, dywanów, czy tapicerki samochodowej.</p>
+                                    <p class="col-md-12">Składa się z kilku kroków:</p>
+                                    <ul class="col-md-12">
+                                        <li>gruntownego odkurzania</li>
+                                        <li>Odplamiania i szczotkowania materiału</li>
+                                        <li>Rozpuszczenie brudu wstępnym czyszczeniem</li>
+                                        <li>Pranie zasadnicze polegające na płukaniu materiału wodą ze specjalnym środkiem do prania za pomocą maszyny natryskowo – ssącej.</li>
+                                    </ul>
+                                    <p class="col-md-12">Prawidłowo wykonane pranie ekstrakcyjne skutecznie usuwa plamy i zabrudzenia , a także zapobiega powstawaniu zacieków – typowej pozostałości po samodzielnym praniu kanap, sof czy narożników.</p>
+                                </div>
+                               <div class="col-md-12 pricing-header">Cennik</div>
                                 <div class="col-md-12">
-                                    <p>Cennik</p>
                                     <ul class=" col-md-8 offset-md-2 pricing-small">
                                         <li>Dywany i wykładziny (cena za metr kwadratowy):</li>
                                         <li><div>Czyszczenie dywanów</div> <span>od 4 zł</span></li>
@@ -207,15 +230,20 @@
                                 </div>
                             </div>
                         </article>
-                        <article class="tab-pane white fade show active" id="windows" role="tabpanel" aria-labelledby="windows-tab">
-                            <p>Oferujemy Państwu mycie okien i wytryn wraz z czyszczeniem ram i parapetów oraz przeszkleń za pomocą odpowiedniego sprzętu wysokiej klasy,
-                                (W cenę wliczają się również środki chemiczne.)</p>
+                        <article class="tab-pane fade show active" id="windows" role="tabpanel" aria-labelledby="windows-tab">
+                            <div class="row">
+                                <div class="col-md-12 offer-desc">
+                                    <p>Oferujemy Państwu mycie okien i wytryn wraz z czyszczeniem ram i parapetów oraz przeszkleń za pomocą odpowiedniego sprzętu wysokiej klasy,
+                                            (W cenę wliczają się również środki chemiczne.)</p>
+                                </div>
+                                <div class="col-md-12 pricing-header">Cennik</div>
                                 <ul class=" col-md-8 offset-md-2 pricing-small">
                                     <li>Mycie okien klasycznie lub parownicą i środkiem nabłyszczającym</li>
                                     <li><div>małe okna</div> <span>15-20 zł/ za otwór okienny</span></li>
                                     <li><div>duże okna</div> <span>25-30 zł /za otwór okienny</span></li>
                                     <li><div>okna balkonowe</div> <span>40-55 zł</span></li>
                                 </ul>
+                            </div>
                         </article>
                     </section>
 

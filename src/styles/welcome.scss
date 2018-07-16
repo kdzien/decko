@@ -4,6 +4,9 @@
 
 header{
     nav{
+        @include rwd(breaks){
+            display:none;
+        }
         padding:30px 50px;
         width:100%;
         display:flex;
@@ -41,9 +44,15 @@ header{
         h1{
             text-align:center;
             @include custom-font(120px,100);
+            @include rwd(breaks){
+                @include custom-font(60px,100);
+            }
         }
         p{
             @include custom-font(19px,300);
+            @include rwd(breaks){
+                padding:5px;
+            }
         }
         button{
             padding:15px 40px;
