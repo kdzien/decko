@@ -50,12 +50,48 @@ footer{
             margin:35px 0px 5px 0px;
             @include custom-font(28px,500);
         }
+        #clean, #graves{
+            ul{
+                .col-md-4,.col-md-6,.col-md-12{
+                    cursor:pointer;
+                    padding:15px 40px;
+                    display:flex;
+                    background-color:Whitesmoke;
+                    flex-direction:column;
+                    justify-content:center;
+                    transition:0.5s;
+                    &:hover{
+                        color:whitesmoke;
+                        background-color:nth($pack-colors, 1);
+                    }
+                }
+            }
+        }
         .offer-desc{
             background-color:white;
             @include box_shadow(1px);
             padding:20px;
             p{
                 margin:0;
+                text-align:left;
+            }
+            .steps{
+                .col-md-3{
+                    padding:20px;
+                    display:flex;
+                    flex-direction:column;
+                    justify-content:center;
+                    &:not(:last-child):after{
+                        content:"";
+                        position:absolute;
+                        right:-7.5px;
+                        height:45px;
+                        width:25px;
+                        background-image:url("../images/right.png");
+                        background-size:cover;
+                        background-repeat:no-repeat;
+                    }
+                }
             }
         }
         h1{
