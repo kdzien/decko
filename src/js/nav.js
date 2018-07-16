@@ -5,7 +5,7 @@ export function nav(){
             $('body').scrollTo(`#${$(this).attr("data-scroll")}`,800);
         })
     })
-    //stickyNavbar
+    //sticky navbar
     let is_sticky = false;
     $(window).scroll(function(){
         if($(this).scrollTop()>2){

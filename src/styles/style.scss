@@ -28,7 +28,7 @@ footer{
             .nav-link{
                 border-radius:0;
                 color:$head-color;
-                @include custom-font(26px, 400);
+                @include custom-font(23px, 400);
                 &.active{
                     color:$second-color;
                     background-color:transparent;
@@ -40,13 +40,42 @@ footer{
         }
     }
     .offer-wrapper{
-        padding: 20px 40px;
+        .tab-pane{
+            &.white{
+                padding:25px;
+            }
+        }
         h1{
             color:white;
             @include custom-font(35px,500);
         }
         p{
             color:black;
+        }
+        ul{
+            list-style-type: none;padding:0;
+        }
+        .pricing-small{
+            li{
+                &:not(:first-child){
+                    @include custom-font(14px,400);
+                    background-color:white;
+                    display:flex;
+                    justify-content: space-between;
+                    margin-bottom:1px;
+                }
+                div,span{
+                    padding:15px 15px;
+                }
+                div{
+
+                }
+                span{
+                    color:whitesmoke;
+                    width:250px;
+                    background-color:nth($pack-colors, 1);
+                }
+            }
         }
     }
     background-color:whitesmoke;
