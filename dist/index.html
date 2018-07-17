@@ -1,9 +1,15 @@
 <!doctype html>
 <html>
     <head>
+        <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script>
+        window.onload = function() {
+            document.getElementsByTagName("BODY")[0].style.visibility = "visible";
+        };
+        </script> 
     </head>
-    <body>
+    <body style="visibility:hidden">
         <header>
             <nav>
                 <div class="logo">DECKO</div>
@@ -27,27 +33,27 @@
                             Zapewniamy w ten sposób gwarancję zadowolenia.</p>
                     <div class="row">
                         <article class="col-md-4 service">
-                            <img src="/images/cleaning.jpg"/>
+                            <img src="./images/cleaning.jpg"/>
                             <h1>KOMPLEKSOWE SPRZĄTANIE</h1>
                             <p>Naszą główną specjalizacją jest  kompleksowe sprzątanie  apartamentów oraz powierzchni  biurowych.</p>
                         </article>
                         <article class="col-md-4 service">
-                            <img src="/images/carpet.jpg"/>
+                            <img src="./images/carpet.jpg"/>
                             <h1>CZYSZCZENIE</h1>
                             <p>Czyszczenie dywanów, wykładzin, tapicerki samochodowej i meblowej.</p>
                         </article>
                         <article class="col-md-4 service">
-                            <img src="/images/window.jpg"/>
+                            <img src="./images/window.jpg"/>
                             <h1>MYCIE OKIEN I WITRYN</h1>
                             <p></p>
                         </article>
                         <article class="col-md-4 offset-md-2 service">
-                            <img src="/images/grave.jpg"/>
+                            <img src="./images/grave.jpg"/>
                             <h1>OPIEKA NAD GROBAMI</h1>
                             <p></p>
                         </article>
                         <article class="col-md-4 service">
-                            <img src="/images/extr.jpg"/>
+                            <img src="./images/extr.jpg"/>
                             <h1>CZYSZCZENIE EKSTRAKCYJNE</h1>
                             <p></p>
                         </article>
@@ -60,21 +66,21 @@
                     
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link " id="graves-tab" data-toggle="tab" href="#graves" role="tab" aria-controls="graves" aria-selected="false">OPIEKA NAD GROBAMI</a>
+                            <a class="nav-link active" id="graves-tab" data-toggle="tab" href="#graves" role="tab" aria-controls="graves" aria-selected="true">OPIEKA NAD GROBAMI</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " id="clean-tab" data-toggle="tab" href="#clean" role="tab" aria-controls="clean" aria-selected="true">SPRZĄTANIE</a>
+                            <a class="nav-link " id="clean-tab" data-toggle="tab" href="#clean" role="tab" aria-controls="clean" aria-selected="false">SPRZĄTANIE</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " id="extractc-tab" data-toggle="tab" href="#extractc" role="tab" aria-controls="extractc" aria-selected="false">CZYSZCZENIE EKSTRAKCYJNE</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" id="windows-tab" data-toggle="tab" href="#windows" role="tab" aria-controls="windows" aria-selected="false">MYCIE OKIEN I WITRYN</a>
+                            <a class="nav-link" id="windows-tab" data-toggle="tab" href="#windows" role="tab" aria-controls="windows" aria-selected="false">MYCIE OKIEN I WITRYN</a>
                         </li>
                     </ul>
                     
                     <section class="tab-content offer-wrapper" id="myTabContent">
-                        <article class="tab-pane  fade " id="graves" role="tabpanel" aria-labelledby="graves-tab">
+                        <article class="tab-pane fade show active " id="graves" role="tabpanel" aria-labelledby="graves-tab">
                             <div class="row">
                                 <div class="col-md-12 offer-desc">
                                     <p>Oferta Naszej Firmy w zakresie opieki nad grobami:</p>
@@ -175,7 +181,7 @@
                             </div>
                             <p>* Przy cyklu sprzątania 6 i 12 razy w roku odśnieżanie w w/w cenie.</p>
                         </article>
-                        <article class="tab-pane  fade show active" id="clean" role="tabpanel" aria-labelledby="clean-tab">
+                        <article class="tab-pane fade " id="clean" role="tabpanel" aria-labelledby="clean-tab">
                             <div class="row">
                                 <div class="col-md-12 offer-desc">
                                     <p class="col-md-12">Bezpiecznie i skutecznie czyścimy wszystkie rodzaje mebli tapicerowanych: sofy, kanapy, narożniki, krzesła,
@@ -206,8 +212,8 @@
                                         <li class="col-md-3">Gruntowne odkurzanie</li>
                                         <li class="col-md-3">Odplamianie oraz szczotkowanie materiału</li>
                                         <li class="col-md-3">Rozpuszczenie brudu wstępnym czyszczeniem</li>
-                                        <li class="col-md-3">Pranie zasadnicze polegające na płukaniu materiału wodą ze specjalnym środkiem do prania
-                                                za pomocą maszyny natryskowo – ssącej.</li>
+                                        <li class="col-md-3"><b>Pranie zasadnicze polegające na płukaniu materiału wodą ze specjalnym środkiem do prania
+                                                za pomocą maszyny natryskowo – ssącej.</b></li>
                                     </ul>
                                     <p class="col-md-12">Prawidłowo wykonane pranie ekstrakcyjne skutecznie usuwa plamy i zabrudzenia , a także zapobiega powstawaniu zacieków – typowej pozostałości po samodzielnym praniu kanap, sof czy narożników.</p>
                                 </div>
@@ -286,6 +292,6 @@
                 <div id="copyright"><p>Copyright © 2018 | All Rights Reserved</p></div>
             </div>
         </footer>
-    <script src="/js/bundle.js"></script>
+    <script src="./js/bundle.js"></script>
     </body>
 </html>

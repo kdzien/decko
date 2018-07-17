@@ -2,6 +2,9 @@
 @import 'mixins';
 @import 'variables';
 
+#top_10{
+    display:none !important;
+}
 button{
     cursor:pointer;
 }
@@ -52,7 +55,7 @@ footer{
         }
         #clean, #graves{
             ul{
-                .col-md-4,.col-md-6,.col-md-12{
+                .col-md-2,.col-md-4,.col-md-6,.col-md-12{
                     cursor:pointer;
                     padding:15px 40px;
                     display:flex;
@@ -90,6 +93,9 @@ footer{
                         background-image:url("../images/right.png");
                         background-size:cover;
                         background-repeat:no-repeat;
+                    }
+                    &:nth-child(1):after, &:nth-child(3):after{
+                        background-image:url("../images/rightr.png");
                     }
                 }
             }
@@ -265,7 +271,7 @@ footer{
             border-radius:0;
             &:focus{
                 border-color: $head-color;
-                box-shadow: 0 0 0 0.2rem #ffb4003d;
+                box-shadow: 0 0 0 0.1rem $second-color;
             }
         }
         button{

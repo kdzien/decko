@@ -19,7 +19,8 @@ export function nav(){
                     "padding": "0px 0px"
                 },0,()=>{
                 }).css({
-                    "background-color":"rgba(53, 43, 68, 0.7)"
+                    "background-color":"rgba(53, 43, 68, 0.7)",
+                    "position":"fixed"
                 })
             }
         }else{
@@ -28,7 +29,8 @@ export function nav(){
                 "padding": "30px 50px",
             },0,()=>{
             }).css({
-                "background-color":"rgba(0,0,0,0)"
+                "background-color":"rgba(0,0,0,0)",
+                "position":"absolute"
             })
         }
     })

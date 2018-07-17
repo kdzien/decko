@@ -3,6 +3,7 @@
 @import 'variables';
 
 header{
+    position:relative;
     nav{
         @include rwd(breaks){
             display:none;
@@ -11,7 +12,7 @@ header{
         width:100%;
         display:flex;
         color:whitesmoke;
-        position:fixed;
+        position:absolute;
         top:0;
         transition:0.2s;
         z-index:99;
