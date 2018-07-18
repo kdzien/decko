@@ -17,7 +17,7 @@ header{
         transition:0.2s;
         z-index:99;
         .logo{
-            padding:12px 25px;
+            padding:13px 25px;
         }
         ul{
             margin-left:auto !important;
@@ -25,21 +25,20 @@ header{
             display:flex;
             list-style-type: none;
             li{
+                @include flex-center();
                 transition:0.2s;
                 cursor:pointer;
-                padding:10px 25px;
+                padding:13px 25px;
                 &:hover{
-                    background-color:$head-color;
+                    color:$second-color;
                 }
             }
         }
     }
-    background: linear-gradient(rgba(93, 64, 55, 0.445), rgba(93, 64, 55, 0.445)), url("../images/cleaning.jpg") no-repeat;
+    background: linear-gradient(transparentize($head-color,0.445), transparentize($head-color,0.445)), url("../images/cleaning.jpg") no-repeat;
     background-size:cover;
     height:100vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
+    @include flex-center();
     .h-content{
         color:whitesmoke;
         text-align:center;

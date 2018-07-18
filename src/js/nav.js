@@ -12,25 +12,27 @@ export function nav(){
     //sticky navbar
     let is_sticky = false;
     $(window).scroll(function(){
-        if($(this).scrollTop()>2){
+        if($(this).scrollTop()>5){
             if(is_sticky === false){
                 is_sticky=true;
+                $(".logo").css({"background-color":"rgb(251, 192, 45)"})
                 $('nav').animate({
                     "padding": "0px 0px"
                 },0,()=>{
                 }).css({
-                    "background-color":"rgba(53, 43, 68, 0.7)",
-                    "position":"fixed"
+                    "background-color":"#333333",
+                    "position":"fixed",
                 })
             }
         }else{
             is_sticky=false;
+            $(".logo").css({"background-color":"rgba(0, 0, 0,0)"})
             $('nav').animate({
                 "padding": "30px 50px",
             },0,()=>{
             }).css({
-                "background-color":"rgba(0,0,0,0)",
-                "position":"absolute"
+                "background-color":"rgba(0, 0, 0, 0)",
+                "position":"absolute",
             })
         }
     })
