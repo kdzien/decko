@@ -5,19 +5,41 @@
 header{
     position:relative;
     nav{
+        padding:50px 0px;
         @include rwd(breaks){
-            display:none;
+            padding:0;
+            font-size:13px;
+            ul{
+                li{
+                    &:first-child{
+                        display:none;
+                    }
+                }
+            }
         }
-        padding:30px 50px;
+        
         width:100%;
-        display:flex;
         color:whitesmoke;
         position:absolute;
         top:0;
         transition:0.2s;
         z-index:99;
+        .nav-wrapper{
+            margin:0 10%;
+            display:flex;
+            flex-flow:row wrap;
+            @include rwd(breakm){
+                margin: 0 2%;
+            }
+            @include rwd(breaks){
+                margin:0;
+            }
+        }
         .logo{
             padding:13px 25px;
+            letter-spacing:3px;
+            font-weight:500;
+            background-color:transparentize($second-color,0.2);
         }
         ul{
             margin-left:auto !important;
@@ -25,6 +47,10 @@ header{
             display:flex;
             list-style-type: none;
             li{
+                &:first-child{
+                    background-color:rgba(255,255,255,0.5);
+                }
+                background-color:rgba(255,255,255,0.3);
                 @include flex-center();
                 transition:0.2s;
                 cursor:pointer;
@@ -43,10 +69,18 @@ header{
         color:whitesmoke;
         text-align:center;
         h1{
+            padding:10px;
             text-align:center;
-            @include custom-font(120px,100);
+            @include custom-font(80px,100);
             @include rwd(breaks){
+                padding:5px;
+                @include custom-font(50px,100);
+            }
+            @include rwd(breakm){
                 @include custom-font(60px,100);
+            }
+            span{
+                font-weight:200;
             }
         }
         p{
@@ -57,8 +91,8 @@ header{
         }
         button{
             padding:15px 40px;
-            background-color:$second-color;
-            border:none;
+            border: solid 1px $second-color;
+            background-color:rgba(0,0,0,0);
             font-weight:500;
             color:whitesmoke;
         }

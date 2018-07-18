@@ -1,4 +1,6 @@
 export function nav(){
+    let is_sticky = false;
+    navScroll();
     //morebutton
     $('#more').click(function(){
         $('body').scrollTo(`#content-services`,800);
@@ -6,19 +8,20 @@ export function nav(){
     //smoothscrol
     $('nav').find('li').each(function(){
         $(this).click(function(){
-            $('body').scrollTo(`#${$(this).attr("data-scroll")}`,800);
+            $('body').scrollTo($(`#${$(this).attr("data-scroll")}`).offset().top-52,800);
         })
     })
     //sticky navbar
-    let is_sticky = false;
-    $(window).scroll(function(){
+    $(window).scroll(navScroll)
+
+    function navScroll(){
         if($(this).scrollTop()>5){
             if(is_sticky === false){
                 is_sticky=true;
-                $(".logo").css({"background-color":"rgb(251, 192, 45)"})
+                $("nav ul li").css({"background-color":"rgba(0,0,0,0)"})
                 $('nav').animate({
                     "padding": "0px 0px"
-                },0,()=>{
+                },100,()=>{
                 }).css({
                     "background-color":"#333333",
                     "position":"fixed",
@@ -26,7 +29,8 @@ export function nav(){
             }
         }else{
             is_sticky=false;
-            $(".logo").css({"background-color":"rgba(0, 0, 0,0)"})
+            $("nav ul li").css({"background-color":"rgba(255,255,255,0.3)"})
+            $("nav ul li:first").css({"background-color":"rgba(255,255,255,0.5)"})
             $('nav').animate({
                 "padding": "30px 50px",
             },0,()=>{
@@ -35,5 +39,5 @@ export function nav(){
                 "position":"absolute",
             })
         }
-    })
+    }
 }

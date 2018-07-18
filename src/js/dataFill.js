@@ -41,7 +41,7 @@ export function dataFill(){
     //karcher offer
     karcher_offer.forEach(elem =>{
         $("#karcher .row").append(`
-        <div class="col-md-6 desc">
+        <div class="col-lg-6 col-md-12 desc">
             <div class="p-image">
                 <img src="${elem.img}"/>
             </div>
@@ -61,6 +61,7 @@ export function dataFill(){
             $(this).removeClass("hide");
             $("#graves-pricing").find("tr:gt(0)").remove();
             fillTable(index);
+            $('body').scrollTo($(`#graves-pricing-header`).offset().top-80,550);
         })
     })
     function fillTable(idx){

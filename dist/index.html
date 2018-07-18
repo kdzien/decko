@@ -10,17 +10,20 @@
         </script> 
     </head>
     <body style="visibility:hidden">
-        <header>
+        <header id="home">
             <nav>
-                <div class="logo">DECKO</div>
-                <ul>
-                    <li data-scroll="content-services">USŁUGI</li>
-                    <li data-scroll="content-offer">OFERTA</li>
-                    <li data-scroll="content-contact">KONTAKT</li>
-                </ul>
+                <div class="nav-wrapper">
+                    <div class="logo">DECKO</div>
+                    <ul>
+                        <li data-scroll="home">STRONA GŁÓWNA</li>
+                        <li data-scroll="content-services">USŁUGI</li>
+                        <li data-scroll="content-offer">OFERTA</li>
+                        <li data-scroll="content-contact">KONTAKT</li>
+                    </ul>  
+                </div>
             </nav>
             <div class="h-content">
-                <h1>DECKO</h1>
+                <h1>WITAMY NA STRONIE FIRMY <span>DECKO</span></h1>
                 <p>Profesjonalne sprzątanie apartamentów oraz powierzchni biurowych</p>
                 <button id="more">Dowiedz się więcej</button>
             </div>
@@ -87,23 +90,23 @@
                                     <p class="center">Nie masz czasu z różnych przyczyn lub nie mieszkasz w Polsce aby zająć się grobem swoich bliskich? Bez problemu zrobimy to za Ciebie.
                                         Oferta Naszej Firmy w zakresie opieki nad grobami:</p>
                                     <ul class="row">
-                                        <li class="col-md-4">Sprzątanie nagrobków oraz bezpośredniego otoczenia grobu</li>
-                                        <li class="col-md-4">Czyszczenie, polerowanie i konserwacja nagrobków</li>
-                                        <li class="col-md-4">Ustawianie i zapalanie zniczy</li>
-                                        <li class="col-md-4">Sprzedaż i dowóz kwiatów, wieńców i wiązanek</li>
-                                        <li class="col-md-4">Odśnieżanie grobu</li>
-                                        <li class="col-md-4">Prace ogrodnicze- obsadzanie grobu, otoczenia roślinami, pielęgnacja kwiatów , krzewów wokół grobu</li>
-                                        <li class="col-md-4">Zagospodarowanie bezpośredniej okolicy grobu (wysypanie grysem, żwirem, montaż ławeczki)</li>
-                                        <li class="col-md-4">Wykonanie dokumentacji fotograficznej (przed i po wykonaniu zlecenia )</li>
-                                        <li class="col-md-4">Wszelkie prace indywidalne na życzenie Klienta.</li>
-                                        <li class="col-md-12">Opieka nad grobem bezpośrednio po pogrzebie
+                                        <li class="col-lg-4 col-md-12">Sprzątanie nagrobków oraz bezpośredniego otoczenia grobu</li>
+                                        <li class="col-lg-4 col-md-12">Czyszczenie, polerowanie i konserwacja nagrobków</li>
+                                        <li class="col-lg-4 col-md-12">Ustawianie i zapalanie zniczy</li>
+                                        <li class="col-lg-4 col-md-12">Sprzedaż i dowóz kwiatów, wieńców i wiązanek</li>
+                                        <li class="col-lg-4 col-md-12">Odśnieżanie grobu</li>
+                                        <li class="col-lg-4 col-md-12">Prace ogrodnicze- obsadzanie grobu, otoczenia roślinami, pielęgnacja kwiatów , krzewów wokół grobu</li>
+                                        <li class="col-lg-4 col-md-12">Zagospodarowanie bezpośredniej okolicy grobu (wysypanie grysem, żwirem, montaż ławeczki)</li>
+                                        <li class="col-lg-4 col-md-12">Wykonanie dokumentacji fotograficznej (przed i po wykonaniu zlecenia )</li>
+                                        <li class="col-lg-4 col-md-12">Wszelkie prace indywidalne na życzenie Klienta.</li>
+                                        <li class="col-lg-12 col-md-12">Opieka nad grobem bezpośrednio po pogrzebie
                                                 (usuwanie wypalonych zniczy, zwiędłych kwiatów ,uformowanie mogiły, montaż drewnianej ramy )</li>
                                     </ul>    
                                 </div>
                             </div>
                             <div class="col-md-12 pricing-header">Pakiety</div>
                             <div class="row">
-                                <div class="col-md-4 pack">
+                                <div class="col-md-12 col-lg-4 pack">
                                     <div class="pack-wrapper">
                                         <div class="pack-h">PODSTAWOWY BEZ MYCIA</div>
                                         <div class="pack-c">
@@ -116,7 +119,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 pack">
+                                <div class="col-md-12 col-lg-4 pack">
                                     <div class="pack-wrapper hide">
                                     <div class="pack-h">PODSTAWOWY</div>
                                     <div class="pack-c">
@@ -130,7 +133,7 @@
                                     </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4 pack">
+                                <div class="col-md-12 col-lg-4 pack">
                                     <div class="pack-wrapper hide">
                                     <div class="pack-h">ROZSZERZONY</div>
                                     <div class="pack-c">
@@ -146,7 +149,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-12 pricing-header">Cennik</div>
+                            <div class="col-md-12 pricing-header" id=graves-pricing-header>Cennik</div>
                             <div class="row">
                                 <div class="table-responsive">
                                 <table class=" col-md-10 offset-md-1">
@@ -171,17 +174,17 @@
                                          fotele. Usuwamy uciążliwe plamy i zabrudzenia nie pozostawiając zacieków na tapicerce. Sprzątanie obejmuje wiele elementów,
                                           w zależności od rodzaju zlecenia:</p>
                                     <ul class="row">
-                                        <li class="col-md-4">zamiatanie</li>
-                                        <li class="col-md-4">odkurzanie</li>
-                                        <li class="col-md-4">mycie podłóg</li>
-                                        <li class="col-md-6">utrzymanie w czystości mebli, urządzeń, sprzętów komputerowych, lamp, rolet</li>
-                                        <li class="col-md-6">czyszczenie i mycie sprzętów sanitarnych, płytek, luster</li>
+                                        <li class="col-lg-4 col-md-12">zamiatanie</li>
+                                        <li class="col-lg-4 col-md-12">odkurzanie</li>
+                                        <li class="col-lg-4 col-md-12">mycie podłóg</li>
+                                        <li class="col-lg-6 col-md-12">utrzymanie w czystości mebli, urządzeń, sprzętów komputerowych, lamp, rolet</li>
+                                        <li class="col-lg-6 col-md-12">czyszczenie i mycie sprzętów sanitarnych, płytek, luster</li>
                                     </ul>
                                     <p class="col-md-12">Usługa obejmuje również utrzymanie w czystości obiektów lub posesji prywatnych na zewnątrz</p>
                                     <ul class="row">
-                                        <li class="col-md-4">latem (czystość, koszenie traw)</li>
-                                        <li class="col-md-4">jesienią (lidwidacja liści, przycinanie krzewów</li>
-                                        <li class="col-md-4">sprzątanie po remontach</li>
+                                        <li class="col-lg-4 col-md-12">latem (czystość, koszenie traw)</li>
+                                        <li class="col-lg-4 col-md-12">jesienią (lidwidacja liści, przycinanie krzewów</li>
+                                        <li class="col-lg-4 col-md-12">sprzątanie po remontach</li>
                                     </ul>
                                 </div>
                             </div>
@@ -189,14 +192,14 @@
                         <article class="tab-pane fade " id="extractc" role="tabpanel" aria-labelledby="extractc-tab">
                             <div class="row">
                                 <div class="col-md-12 offer-desc">
-                                    <p class="col-md-12"><b>Czyszczenie ekstrakcyjne</b> to metoda dogłębnego prania tapicerki meblowej, wykładzin, dywanów, czy tapicerki samochodowej.</p>
+                                    <p class="col-md-12">Czyszczenie ekstrakcyjne to metoda dogłębnego prania tapicerki meblowej, wykładzin, dywanów, czy tapicerki samochodowej.</p>
                                     <p class="col-md-12">Składa się z kilku kroków:</p>
                                     <ul class="row steps">
                                         <li class="col-md-3">Gruntowne odkurzanie</li>
                                         <li class="col-md-3">Odplamianie oraz szczotkowanie materiału</li>
                                         <li class="col-md-3">Rozpuszczenie brudu wstępnym czyszczeniem</li>
-                                        <li class="col-md-3"><b>Pranie zasadnicze polegające na płukaniu materiału wodą ze specjalnym środkiem do prania
-                                                za pomocą maszyny natryskowo – ssącej.</b></li>
+                                        <li class="col-md-3"><strong>Pranie zasadnicze polegające na płukaniu materiału wodą ze specjalnym środkiem do prania
+                                                za pomocą maszyny natryskowo – ssącej.</strong></li>
                                     </ul>
                                     <p class="col-md-12">Prawidłowo wykonane pranie ekstrakcyjne skutecznie usuwa plamy i zabrudzenia , a także zapobiega powstawaniu zacieków – typowej pozostałości po samodzielnym praniu kanap, sof czy narożników.</p>
                                 </div>
@@ -250,7 +253,7 @@
                 <section class="container content">
                     <h1 class="content-header">KONTAKT</h1>
                     <div class="row">
-                        <section class="col-md-6 contact">
+                        <section class="col-md-12 col-lg-6 contact">
                             <h1>DECKO</h1>
                             <p>Świadczymy usługi na terenie lwówecki <span>/</span> lubański <span>/</span> jeleniogórski </p>
                             <div class="contact-data">
@@ -263,7 +266,7 @@
                                 <p>Adres email: dzieniu@gmail.com</p>
                             </div>
                         </section>
-                        <form class="col-md-6 ">
+                        <form class="col-md-12 col-lg-6 ">
                             <h1>WYŚLIJ WIADOMOŚĆ</h1>
                             <div class="form-group">
                                 <input type="email" class="form-control" placeholder="Adres email">

@@ -16,7 +16,7 @@ footer{
         display:flex;
     }
     color:black;
-    background-color:darken($head-color,10%);
+    background-color:#333333;
     #copyright{
         margin:0 auto;  
         padding:25px 15px;
@@ -39,8 +39,7 @@ footer{
 }
 #content-offer{
     .nav-tabs{
-        margin: 0 -100px;
-        justify-content: space-between;
+        justify-content: center;
         border-bottom:none;
         .nav-item{
             .nav-link{
@@ -58,6 +57,7 @@ footer{
             @include rwd(breaks){
                 width:100%;
             }
+            
             &:last-child{
                 margin:0 auto;
             }
@@ -68,7 +68,7 @@ footer{
             margin:35px 0px 5px 0px;
             @include custom-font(28px,500);
         }
-        #clean, #graves{
+        #clean, #graves, #extractc{
             .center{
                 text-align:center;
             }
@@ -80,6 +80,7 @@ footer{
                     cursor:pointer;
                     padding:15px 40px;
                     @include flex-center();
+                    font-weight: 200;
                     background-color:white;
                     transition:0.5s;
                     &:hover{
@@ -122,6 +123,7 @@ footer{
             @include box_shadow(1px);
             padding:20px;
             p{
+                font-weight: 400;
                 margin:0;
                 text-align:left;
             }
@@ -226,6 +228,7 @@ footer{
         }
     }
     .pack{
+        margin-bottom:10px;
         .pack-wrapper{
             position:relative;
             display: block;height: 100%;
@@ -240,9 +243,11 @@ footer{
                 }
                 &:before{
                     position:absolute;
-                    left:0;top:0;width:100%;
-                    height:30px;
-                    padding:5px;
+                    left:0;top:50%;width:100%;
+                    transform:translateY(-50%);
+                    height:50px;
+                    font-weight:200;
+                    padding:15px;
                     content:"Kliknij, aby poznać cennik";
                     background-color:#333333;
                     text-align:Center;
