@@ -39,8 +39,7 @@
                         </article>
                         <article class="col-md-4 service">
                             <img src="./images/carpet.jpg"/>
-                            <h1>CZYSZCZENIE</h1>
-                            <p>Czyszczenie dywanów, wykładzin, tapicerki samochodowej i meblowej.</p>
+                            <h1>WYPOŻYCZALNIA SPRZĘTU KARCHER</h1>
                         </article>
                         <article class="col-md-4 service">
                             <img src="./images/window.jpg"/>
@@ -69,6 +68,9 @@
                             <a class="nav-link active" id="graves-tab" data-toggle="tab" href="#graves" role="tab" aria-controls="graves" aria-selected="true">OPIEKA NAD GROBAMI</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link " id="karcher-tab" data-toggle="tab" href="#karcher" role="tab" aria-controls="karcher" aria-selected="false">WYPOŻYCZALNIA SPRZĘTU KARCHER</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link " id="clean-tab" data-toggle="tab" href="#clean" role="tab" aria-controls="clean" aria-selected="false">SPRZĄTANIE</a>
                         </li>
                         <li class="nav-item">
@@ -80,9 +82,10 @@
                     </ul>
                     
                     <section class="tab-content offer-wrapper" id="myTabContent">
-                        <article class="tab-pane fade show active " id="graves" role="tabpanel" aria-labelledby="graves-tab">
+                        <article class="tab-pane fade " id="graves" role="tabpanel" aria-labelledby="graves-tab">
                             <div class="row">
                                 <div class="col-md-12 offer-desc">
+                                    <p>Nie masz czasu z różnych przyczyn lub nie mieszkasz w Polsce aby zająć się grobem swoich bliskich? Bez problemu zrobimy to za Ciebie.</p>
                                     <p>Oferta Naszej Firmy w zakresie opieki nad grobami:</p>
                                     <ul class="row">
                                         <li class="col-md-4">Sprzątanie nagrobków oraz bezpośredniego otoczenia grobu</li>
@@ -115,7 +118,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 pack">
-                                    <div class="pack-wrapper">
+                                    <div class="pack-wrapper hide">
                                     <div class="pack-h">PODSTAWOWY</div>
                                     <div class="pack-c">
                                         <ul>
@@ -129,7 +132,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-4 pack">
-                                    <div class="pack-wrapper">
+                                    <div class="pack-wrapper hide">
                                     <div class="pack-h">ROZSZERZONY</div>
                                     <div class="pack-c">
                                         <ul>
@@ -146,8 +149,9 @@
                             </div>
                             <div class="col-md-12 pricing-header">Cennik</div>
                             <div class="row">
+                                <div class="table-responsive">
                                 <table class=" col-md-10 offset-md-1">
-                                    <tbody>
+                                    <tbody id="graves-pricing">
                                         <tr>
                                         <th></th>
                                         <td>Jednorazowa</td>
@@ -155,29 +159,9 @@
                                         <td>6x w roku*</td>
                                         <td>12x w roku*</td>
                                         </tr>
-                                        <tr>
-                                        <th >Grób pojedynczy</th>
-                                        <td>Od 50zł</td>
-                                        <td>140zł</td>
-                                        <td>261zł</td>
-                                        <td>480zł</td>
-                                        </tr>
-                                        <tr>
-                                        <th >Grób podwójny</th>
-                                        <td>Od 50zł</td>
-                                        <td>140zł</td>
-                                        <td>261zł</td>
-                                        <td>480zł</td>
-                                        </tr>
-                                        <tr>
-                                        <th >Grób rodzinny</th>
-                                        <td>Od 50zł</td>
-                                        <td>140zł</td>
-                                        <td>261zł</td>
-                                        <td>480zł</td>
-                                        </tr>
                                     </tbody>
                                 </table>
+                                </div>
                             </div>
                             <p>* Przy cyklu sprzątania 6 i 12 razy w roku odśnieżanie w w/w cenie.</p>
                         </article>
@@ -239,6 +223,11 @@
                                 </div>
                             </div>
                         </article>
+                        <article class="tab-pane fade show active " id="karcher" role="tabpanel" aria-labelledby="karcher-tab">
+                            <div class="row">
+                                
+                            </div>
+                        </article>
                         <article class="tab-pane fade " id="windows" role="tabpanel" aria-labelledby="windows-tab">
                             <div class="row">
                                 <div class="col-md-12 offer-desc">
@@ -264,10 +253,15 @@
                     <div class="row">
                         <section class="col-md-6 contact">
                             <h1>DECKO</h1>
-                            <p>Świadczymy usługi na terenie Świeradów Zdrój / Chmieleń</p>
+                            <p>Świadczymy usługi na terenie lwówecki <span>/</span> lubański <span>/</span> jeleniogórski </p>
                             <div class="contact-data">
-                                <p>Phone number: 533830555</p>
-                                <p>E-mail adress: dzieniu@gmail.com</p>
+                                <p>59-623 Chmieleń 73</p>
+                                <p>woj. dolnośląskie</p>
+                                <p>NIP: 91125132599</p>
+                            </div>
+                            <div class="contact-data">
+                                <p>Telefon: 533830555</p>
+                                <p>Adres email: dzieniu@gmail.com</p>
                             </div>
                         </section>
                         <form class="col-md-6 ">
@@ -281,7 +275,7 @@
                             <div class="form-group">
                                 <textarea class="form-control" rows="6" placeholder="Wiadomość"></textarea>
                             </div>
-                            <button>WYŚLIJ</button>
+                            <button type="button"  title="Obecnie niedostępne" disabled>WYŚLIJ</button>
                         </form>
                     </div>
                 </section>

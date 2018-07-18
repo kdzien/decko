@@ -34,7 +34,7 @@ footer{
             .nav-link{
                 border-radius:0;
                 color:$head-color;
-                @include custom-font(23px, 400);
+                @include custom-font(20px, 400);
                 &.active{
                     color:$second-color;
                     background-color:transparent;
@@ -45,6 +45,9 @@ footer{
             }
             @include rwd(breaks){
                 width:100%;
+            }
+            &:last-child{
+                margin:0 auto;
             }
         }
     }
@@ -59,13 +62,43 @@ footer{
                     cursor:pointer;
                     padding:15px 40px;
                     display:flex;
-                    background-color:Whitesmoke;
+                    background-color:white;
                     flex-direction:column;
                     justify-content:center;
                     transition:0.5s;
                     &:hover{
                         color:whitesmoke;
                         background-color:nth($pack-colors, 1);
+                    }
+                }
+            }
+        }
+        #karcher{
+            .desc{
+                display:flex;
+                margin-bottom:10px;
+                .p-image{
+                    background-color:white;
+                    img{
+                        width:130px;
+                        transition:0.5s all;
+                    }
+                }
+                .p-desc{
+                    border-left:10px solid whitesmoke;
+                    background-color:white;
+                    @include custom-font(22px, 500);
+                    padding:20px;
+                    text-align:left;
+                    width:100%;
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                
+                &:hover{
+                    img{
+                        transform:rotate(10deg) scale(0.85);
                     }
                 }
             }
@@ -163,7 +196,6 @@ footer{
                 }
                 &:first-child{
                     th,td{
-                        background-color:nth($pack-colors, 1);
                         color:white;
                     }
                     th{
@@ -183,9 +215,21 @@ footer{
     }
     .pack{
         .pack-wrapper{
+            position:relative;
             display: block;height: 100%;
             background-color:white;
             @include box_shadow(4px);
+            &.hide{
+                &:after{
+                    cursor:pointer;
+                    content:"";
+                    position:absolute;
+                    left:0;top:0;
+                    width:100%;
+                    height:100%;
+                    background-color:rgba(0,0,0,0.1)
+                }
+            }
         }
         .pack-h{
             width:100%;
@@ -253,10 +297,14 @@ footer{
         }
     }
     .contact{
+        span{
+            color:$second-color;
+        }
         .contact-data{
             p{
                 margin:0;
             }
+            margin-bottom:10px;
         }
         margin-bottom:20px;
     }
@@ -275,12 +323,23 @@ footer{
             }
         }
         button{
+            position:relative;
             width:100%;
             padding:15px 40px;
             background-color:$second-color;
             border:none;
             font-weight:500;
             color:whitesmoke;
+            &:disabled{
+                cursor:not-allowed;
+                &:after{
+                    content:"";
+                    position:absolute;
+                    width:100%;height:100%;
+                    left:0;top:0;
+                    background-color:rgba(0,0,0,0.3)
+                }
+            }
         }
     }
 }

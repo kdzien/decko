@@ -7,5 +7,6 @@ import '../styles/welcome.scss';
 import 'jquery';
 import 'jquery.scrollto';
 import {nav} from './nav';
-
+import {dataFill} from './dataFill';
 nav();
+dataFill();
