@@ -27,14 +27,14 @@ header{
             li{
                 transition:0.2s;
                 cursor:pointer;
-                padding:12px 25px;
+                padding:10px 25px;
                 &:hover{
                     background-color:$head-color;
                 }
             }
         }
     }
-    background: linear-gradient(#352b44cc, #352b44cc), url("../images/cleaning.jpg") no-repeat;
+    background: linear-gradient(rgba(93, 64, 55, 0.445), rgba(93, 64, 55, 0.445)), url("../images/cleaning.jpg") no-repeat;
     background-size:cover;
     height:100vh;
     display:flex;
