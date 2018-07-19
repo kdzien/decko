@@ -14150,7 +14150,7 @@ function nav() {
     navScroll();
     //morebutton
     $('#more').click(function () {
-        $('body').scrollTo('#content-services', 800);
+        $('body').scrollTo($('#content-services').offset().top - 52, 800);
     });
     //smoothscrol
     $('nav').find('li').each(function () {
