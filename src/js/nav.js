@@ -20,7 +20,7 @@ export function nav(){
                 is_sticky=true;
                 $("nav ul li").css({"background-color":"rgba(0,0,0,0)"})
                 $('nav').animate({
-                    "padding": "0px 0px"
+                    "padding": "0px 50px"
                 },100,()=>{
                 }).css({
                     "background-color":"#333333",

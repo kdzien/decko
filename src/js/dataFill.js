@@ -55,7 +55,7 @@ export function dataFill(){
     //graves pricing
     let graves_pricing_colors = ['#3ea9f5','#5e8dea','#3769cc'];
     fillTable(0);
-    $(".pack-wrapper").each(function(index){
+    $(".pack-wrapper .pack-f button").each(function(index){
         $(this).click(function(){
             $(".pack-wrapper").addClass("hide")
             $(this).removeClass("hide");
@@ -65,7 +65,6 @@ export function dataFill(){
         })
     })
     function fillTable(idx){
-        $("#graves-pricing tr:first td").css({"background-color":`${graves_pricing_colors[idx]}`});
         $("#graves-pricing tr:last").after(
         `
         <tr><th>Grób pojedynczy</th><td>${graves_pricing[idx].st_1[0]}</td><td>${graves_pricing[idx].st_1[1]}</td><td>${graves_pricing[idx].st_1[2]}</td><td>${graves_pricing[idx].st_1[3]}</td></tr>
