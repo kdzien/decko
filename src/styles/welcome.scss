@@ -39,6 +39,9 @@ header{
             }
         }
         .logo{
+            @media only screen and (max-width: 410px) { 
+                padding:11px 13px;
+            }
             padding:13px 25px;
             letter-spacing:3px;
             font-weight:500;
@@ -58,6 +61,9 @@ header{
                 transition:0.2s;
                 cursor:pointer;
                 padding:13px 25px;
+                @media only screen and (max-width: 410px) { 
+                    padding:11px 13px;
+                }
                 &:hover{
                     color:$second-color;
                 }

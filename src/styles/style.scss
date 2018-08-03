@@ -2,6 +2,11 @@
 @import 'mixins';
 @import 'variables';
 
+#body-wrapper{
+    position:absolute;
+    width:100%;
+    top:0;
+}
 #top_10, .cbalink{
     display:none !important;
 }
