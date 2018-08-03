@@ -3,13 +3,10 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <script>
-        window.onload = function() {
-            document.getElementsByTagName("BODY")[0].style.visibility = "visible";
-        };
-        </script> 
     </head>
-    <body style="visibility:hidden">
+    <body>
+        <div id="waiting-modal" style="display:none"><img src="./images/loading.svg" alt="Kiwi standing on oval"></div>
+        <div id="body-wrapper" style="display:none">
         <header id="home">
             <nav>
                 <div class="nav-wrapper">
@@ -302,6 +299,8 @@
                 </div>
             </div>
         </footer>
+    </div>
     <script src="./js/bundle.js"></script>
+
     </body>
 </html>

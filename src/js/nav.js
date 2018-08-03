@@ -18,9 +18,10 @@ export function nav(){
         if($(this).scrollTop()>5){
             if(is_sticky === false){
                 is_sticky=true;
+                let nav_padding = $( window ).width()<767 ? "0px 0px" : "0px 50px";
                 $("nav ul li").css({"background-color":"rgba(0,0,0,0)"})
                 $('nav').animate({
-                    "padding": "0px 50px"
+                    "padding": nav_padding
                 },100,()=>{
                 }).css({
                     "background-color":"#333333",
@@ -29,10 +30,11 @@ export function nav(){
             }
         }else{
             is_sticky=false;
+            let nav_padding = $( window ).width()<767 ? "0px 0px" : "30px 50px";
             $("nav ul li").css({"background-color":"rgba(255,255,255,0.3)"})
             $("nav ul li:first").css({"background-color":"rgba(255,255,255,0.5)"})
             $('nav').animate({
-                "padding": "30px 50px",
+                "padding": nav_padding,
             },0,()=>{
             }).css({
                 "background-color":"rgba(0, 0, 0, 0)",

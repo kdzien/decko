@@ -5,6 +5,9 @@
 header{
     position:relative;
     nav{
+        @include rwd(lowtablets){
+            padding:0px 0px;
+        }
         padding:50px 0px;
         @include rwd(breaks){
             padding:0;
